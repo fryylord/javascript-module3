@@ -1,4 +1,8 @@
 // Assignment Code
+const alpha = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+const numbers = "0123456789";
+const symbols = "!@#$%^&*_-+=";
+
 var generateBtn = document.querySelector("#generate");
 var passwordTxt = document.getElementById("password");
 var length = document.getElementById("length");
@@ -6,9 +10,7 @@ var incNumbers = document.getElementById("numbers");
 var incSymbols = document.getElementById("symbols");
 
 // Write password to the #password input
-var alpha = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-var numbers = "0123456789";
-var symbols = "!@#$%^&*_-+=";
+
 
 function writePassword() {
   var password = (length, characters) => {
@@ -28,4 +30,9 @@ function writePassword() {
 }
 
 // Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+generateBtn.addEventListener("click", () => {
+  let characters = alpha;
+  incNumbers.checked ? (characters += numbers) : "";
+  incSymbols.checked ? (characters += symbols) : "";
+  passwordText.value = writePassword(length.value, characters);
+});

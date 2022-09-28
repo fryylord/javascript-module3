@@ -30,9 +30,4 @@ function writePassword() {
 }
 
 // Add event listener to generate button
-generateBtn.addEventListener("click", () => {
-  let characters = alpha;
-  incNumbers.checked ? (characters += numbers) : "";
-  incSymbols.checked ? (characters += symbols) : "";
-  passwordText.value = writePassword(length.value, characters);
-});
+generateBtn.addEventListener("click", writePassword);

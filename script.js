@@ -23,16 +23,16 @@ function random_item(items3)
 function random_item(items4)
 {return items4[Math.floor(Math.random()*items4.length)];}
 
-console.log(random_item(items1));
-console.log(random_item(items2));
-console.log(random_item(items3));
-console.log(random_item(items4));
+console.log(random_item(items1),random_item(items2),random_item(items3),random_item(items4), 
+random_item(items1),random_item(items2),random_item(items3),random_item(items4),random_item(items1),
+random_item(items2),random_item(items3),random_item(items4));
 
-//function writePassword() {
+//function writePassword()
+
+
   //var password = generatePassword();
   //var passwordText = document.querySelector("#password");
-//
-//  passwordText.value = password;
-//
-//}
+
+//passwordText.value = password;
+
 //generateBtn.addEventListener("click", writePassword);

@@ -27,12 +27,13 @@ for (let i = 1; i <= passLength; i++) {
 
 var password = [password()]
 
-function password() {
+function password(pw) {
 if (pw.includes(upperAlpha) && pw.includes(lowerAlpha) && pw.includes(num) && pw.includes(sym)) {
-    console.log(pw)
+   return
   }
   else {random_item(chars)};
 }
+console.log(password(pw))
 // function writePassword()
 
 

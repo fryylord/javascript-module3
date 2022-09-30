@@ -19,7 +19,7 @@ var sym = ["!","@","#","$","%","^","&","*","(",")"]
 var passLength = 10;
 
 var pw = ""
-for (let i = 5; i <= passLength; i++) {
+for (let i = 1; i <= passLength; i++) {
 //  console.log(random_item(chars));
   function random_item(chars) {
   {return chars[Math.floor(Math.random()*chars.length)];}

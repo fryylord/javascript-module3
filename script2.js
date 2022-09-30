@@ -20,21 +20,61 @@ var passLength = 10;
 
 var pw = ""
 for (let i = 1; i <= passLength; i++) {
-//  console.log(random_item(chars));
-  function random_item(chars) {
+ console.log(randomItem(chars));
+  function randomItem(chars) {
   {return chars[Math.floor(Math.random()*chars.length)];}
 }}
 
-var password = [password()]
+// var password = [passString()]
 
-function password(pw) {
-if (pw.includes(upperAlpha) && pw.includes(lowerAlpha) && pw.includes(num) && pw.includes(sym)) {
-   return
-  }
-  else {random_item(chars)};
-}
-console.log(password(pw))
+// function passString(pw) {
+// if (pw.includes(upperAlpha) && pw.includes(lowerAlpha) && pw.includes(num) && pw.includes(sym)) {
+//    return
+//   }
+//   else {random_item(chars)};
+// }
+// console.log(password(pw))
+
+// var scramPass = [password(pw)]
+
+// function password(pw) {
+// if (pw.includes(upperAlpha) && pw.includes(lowerAlpha) && pw.includes(num) && pw.includes(sym)) {
+//   }
+//   else {getRandomChar(chars)};
+//   console.log(scramPass)}
+// }
+
+
+
+
+
 // function writePassword()
+
+//   var passArray = Array(passwordLength);
+//     passArray[1] = upperAlpha;
+//     passArray[2] = lowerAlpha;
+//     passArray[3] = num;
+//   //  passArray[4] = sym;
+//     passArray = passArray.fill(allChars, 4);
+    
+//   return codePass(passArray.map(function(x) { return x[Math.floor(Math.random() * x.length)] })).join('')
+// }
+
+
+// function codePass(array) {
+//   for (let i = array.length - 1; i > 0; i--) {var j = Math.floor(Math.random() * (i + 1));
+//     var temp = array[i];
+//     array[i] = array[j];
+//     array[j] = temp;
+//   }
+//   return array;
+// }
+
+// console.log(genPass(500))
+
+
+
+
 
 
 // var password = generatePassword();

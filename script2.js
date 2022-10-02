@@ -9,8 +9,6 @@ const passLength = 12
 
 let charPool = numbers + upperCases + lowerCases + symbols
 
-generateBtn.addEventListener("click", generatesPass);
-
 function generatesPass() {
   const randomPass = []
   for (let i = 0; i < 1; i++) {
@@ -22,4 +20,20 @@ function generatesPass() {
       )
   }
   document.getElementById("password").innerHTML = randomPass
+  return(randomPass)
 }
+
+const incLowerCases = document.getElementById("password").innerHTML;
+const incUpperCases = document.getElementById("password").innerHTML;
+const incNumbers = document.getElementById("password").innerHTML;
+const incSymbols = document.getElementById("password").innerHTML;
+
+let characters = generatesPass
+generateBtn.addEventListener("click", generatesPass); {
+incNumbers.checked ? (characters += numbers) : "";
+incSymbols.checked ? (characters += symbols) : "";
+incUpperCases.checked ? (characters += upperCases) : "";
+incLowerCases.checked ? (characters += lowerCases) : "";
+};
+
+

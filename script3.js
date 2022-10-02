@@ -39,7 +39,6 @@ function generatePass() {
   if(numb) { 
     userSelection = userSelection.concat(numbers);
   }
-  console.log("user selection = " + userSelection);
 
   if (userSelection.length === 0)   return;
    

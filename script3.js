@@ -5,8 +5,6 @@ const lowerAlpha = "abcdefghijklmnopqrstuvwxyx";
 const numbers = "0123456789";
 const symbols = "!@#$%^&*()?/;:~";
 
-generateBtn.addEventListener("click", generatePass);
-document.getElementById("password").innerHTML = finalPassword
 function generatePass() { 
   var userSelection = ''; 
   var finalPassword = '';
@@ -51,4 +49,6 @@ function generatePass() {
 document.getElementById("password").innerHTML = finalPassword
 return finalPassword
 }
+generateBtn.addEventListener("click", generatePass);
+document.getElementById("password").innerHTML = finalPassword
 console.log (generatePass());

@@ -3,19 +3,19 @@ var generateBtn = document.querySelector("#generate");
 const upperAlpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 const lowerAlpha = "abcdefghijklmnopqrstuvwxyx";
 const numbers = "0123456789";
-const symbols = "!@#$%^&*()?/;:~";
+const symbols = "!@#$%^&*()?";
 
 function generatePass() { 
   var userSelection = ''; 
   var finalPassword = '';
-  var passLength = prompt("Please insert a number between 5 to 99");
+  var passLength = prompt("Please insert a number between 8 to 128");
 
-  if (passLength <5 ) {
-    alert ("Please insert a number between 5 to 99");
+  if (passLength <8 ) {
+    alert ("Please insert a number between 8 to 128");
     return;
   }
-  if (passLength >99 ) {
-  alert ("Please insert a number between 5 to 99");
+  if (passLength >128 ) {
+  alert ("Please insert a number between 8 to 128");
   return;
   }
   
@@ -47,7 +47,6 @@ function generatePass() {
     finalPassword = finalPassword.concat(random)
   }
 document.getElementById("password").textContent = finalPassword
-return finalPassword
 }
 generateBtn.addEventListener("click", generatePass);
 document.getElementById("password").textContent = finalPassword

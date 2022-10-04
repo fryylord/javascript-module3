@@ -46,9 +46,9 @@ function generatePass() {
     var random = userSelection[randomIndex]; 
     finalPassword = finalPassword.concat(random)
   }
-document.getElementById("password").innerHTML = finalPassword
+document.getElementById("password").textContent = finalPassword
 return finalPassword
 }
 generateBtn.addEventListener("click", generatePass);
-document.getElementById("password").innerHTML = finalPassword
+document.getElementById("password").textContent = finalPassword
 console.log (generatePass());

@@ -2,7 +2,7 @@
 
 ## Solution for Module 3 Challenge
 
-This site has been created as a tool to create passwords of various lengths (5-99 characters), as well as presenting the options for the password to contain uppercase and lowercase letters, as well as numbers and special characters.  Upon activating the program, windows are presented to the user asking about the different possibilities for the password.  Upon completion, the password is displayed in the text box on the page.  
+This site has been created as a tool to create passwords of various lengths (8-128 characters), as well as presenting the options for the password to contain uppercase and lowercase letters, as well as numbers and special characters.  Upon activating the program, windows are presented to the user asking about the different possibilities for the password.  Upon completion, the password is displayed in the text box on the page.  
 
 ![](./screenshot.jpg)
 [Link to Page](https://fryylord.github.io/javascript-module3/)
@@ -53,7 +53,7 @@ SOFTWARE.
 Simple user interface
 Adaptive for use on varying devices
 Option to add any of 4 character sets to the password
-Option to create a password between 5 and 99 characters long
+Option to create a password anywhere between 8 and 128 characters long
 
 ## Tests
 

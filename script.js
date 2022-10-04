@@ -5,7 +5,7 @@ const lowerAlpha = "abcdefghijklmnopqrstuvwxyx";
 const numbers = "0123456789";
 const symbols = "!@#$%^&*()?";
 
-function generatePass() { 
+var genPass = function generatePass() { 
   var userSelection = ''; 
   var finalPassword = '';
   var passLength = prompt("Please insert a number between 8 to 128");
@@ -48,6 +48,5 @@ function generatePass() {
   }
 document.getElementById("password").textContent = finalPassword
 }
-generateBtn.addEventListener("click", generatePass);
-document.getElementById("password").textContent = finalPassword
-console.log (generatePass());
+generateBtn.addEventListener("click", genPass);
+
